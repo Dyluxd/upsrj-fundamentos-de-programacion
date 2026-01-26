@@ -1,19 +1,27 @@
 #include <stdio.h>
 
-int main() {
-        float L;
-
-            int area;
-            int volumen;
-    double side, area, volume;
-
-    printf("introduce long de la longitud del lado:");
-    scanf("%lf", &side);
-
-    area = L * L;
-    volume = L * L * L;
-
-    printf("area:%1\nvolumen:%1\n", area, volumen);
-
-    return 0;
+int is_even(int numero) {
+    return numero % 2 == 0;
 }
+
+//ayuda papus
+void verificar_numero(int numero) {
+    if (numero == 0) {
+        printf("No se puede dividir entre 0\n ");
+    }
+else if (is_even(numero)) {
+    printf("el numero es par\n ");
+    }
+else {
+    printf("el numero es impar\n ");
+    }
+}
+ int main() {
+    while(1) {
+        int numero;
+     printf("ingresa numerito ");
+    scanf("%i", &numero);
+     verificar_numero(numero);
+     }
+return 0;
+ }
