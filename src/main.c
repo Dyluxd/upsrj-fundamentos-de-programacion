@@ -7,7 +7,7 @@ int is_even(int numero) {
 //ayuda papus
 void verificar_numero(int numero) {
     if (numero == 0) {
-        printf("No se puede dividir entre 0\n ");
+        printf("El numero es par\n ");
     }
 else if (is_even(numero)) {
     printf("el numero es par\n ");
@@ -22,6 +22,7 @@ else {
      printf("ingresa numerito ");
     scanf("%i", &numero);
      verificar_numero(numero);
+     break;
      }
 return 0;
  }
